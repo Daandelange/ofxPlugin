@@ -10,7 +10,7 @@
 #ifdef WIN32
 #define OFXPLUGIN_EXPORT __declspec(dllexport)
 #else
-#define OFXPLUGIN_EXPORT
+#define OFXPLUGIN_EXPORT __attribute__((visibility("default")))
 #endif
 
 
