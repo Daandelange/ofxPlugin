@@ -182,7 +182,7 @@ namespace ofxPlugin {
 #ifdef TARGET_WIN32
                 string desiredExtension = ".dll";
 #else
-                string desiredExtension = ".dylib";
+                string desiredExtension = ".bundle";
 #endif
 				if (ofToLower(extension.string()) == desiredExtension) {
 					try {
