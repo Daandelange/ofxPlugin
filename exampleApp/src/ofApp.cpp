@@ -16,7 +16,7 @@ void ofApp::setup() {
 #ifdef _WIN32
 	factoryRegister.loadPlugin("../examplePlugin.dll", true);
 #else
-	factoryRegister.loadPlugin("../examplePlugin.dylib", true);
+	factoryRegister.loadPlugin("../examplePlugin.bundle", true);
 #endif
 
 	// Every time the mouse moves, we're going to choose a new shape to make (i.e. step through the list of factories)
